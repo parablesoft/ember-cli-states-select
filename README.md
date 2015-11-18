@@ -1,3 +1,4 @@
+
 # ember-cli-states-select
 
 An [ember-cli](http://www.ember-cli.com) addon for using 
@@ -28,7 +29,7 @@ In your Handlebars templates:
 
 Pass in the field you want to bind the value of the component to and you're off and running. This will render a select list with all the states, as shown below:
 
-```html```
+```
 <select>
 	<option value="AL">Alabama</option>
 	<option value="AK">Alaska</option>
@@ -37,16 +38,21 @@ Pass in the field you want to bind the value of the component to and you're off 
 ```
 
 ### Other usage options
-```handlebars```
+```
 <label for="someIdForThisComponent">State</label>
 {{states-select value=model.state class="form-control" id="someIdForThisComponent" onlyDisplayStateCode=true}}
 ```
 
-class - If you'd like to add a css class to the <select> element generated like "form-control" from Twitter Bootstrap, pass in a value for class.
-id - If you would like to tie a label to the component, pass in an id and then use that with the for attribute on your label.
-onlyDisplayStateCode - default is false. If you would only like to display the two digit code in your select options, then set this to true. If will render something similar to this:
+#### Options described
+The label is only included to show how you would use the for. 
 
-```html```
+**class** - If you'd like to add a css class to the `<select>` element generated like "form-control" from Twitter Bootstrap, pass in a value for class.
+
+**id** - If you would like to tie a label to the component, pass in an id and then use that with the for attribute on your label.
+
+**onlyDisplayStateCode** - default is false. If you would only like to display the two digit code in your select options, then set this to true. If will render something similar to this:
+
+```
 <select>
 	<option value="AL">AL</option>
 	<option value="AK">AK</option>
@@ -67,3 +73,6 @@ For more information on the emberx-select component, please see below:
 
 ## Other Mentions
 Thanks to this [gist](https://gist.github.com/mshafrir/2646763#file-states_titlecase-json) for the initial list of states. 
+
+## Contribution
+Fork this repository, make a feature branch and send in a pull request.
