@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-states-select",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "A simple ember addon that for a US states select box",
   "directories": {
     "doc": "doc",
