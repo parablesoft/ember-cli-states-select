@@ -20,13 +20,13 @@ requires Ember CLI `>= 1.13.X`.
 
 ## Basic usage
 
-In your Handlebars templates:
+In your Handlebars template:
 
 ```handlebars
 {{states-select value=model.state}}
 ```
 
-Pass in the field you want to bind the value of the component to and you're off and running. This will render a select list with all the states, as shown below:
+Pass in the field you want to bind the value of the component to, and you're off and running. This will render a select list with all the states, as shown below:
 
 ```
 <select>
@@ -43,13 +43,13 @@ Pass in the field you want to bind the value of the component to and you're off 
 ```
 
 #### Options described
-The label is only included to show how you would use the for. 
+The label is only included to show how you would use the 'for'. 
 
-**class** - If you'd like to add a css class to the `<select>` element generated like "form-control" from Twitter Bootstrap, pass in a value for class.
+**class** - If you'd like to add a CSS class to the generated `<select>` element (like "form-control" from Twitter Bootstrap), pass in a value for 'class'.
 
-**id** - If you would like to tie a label to the component, pass in an id and then use that with the for attribute on your label.
+**id** - If you would like to tie a label to the component, pass in an id and then use that id with the 'for' attribute on your label.
 
-**onlyDisplayStateCode** - default is false. If you would only like to display the two digit code in your select options, then set this to true. If will render something similar to this:
+**onlyDisplayStateCode** - Default is false. If you would only like to display the two digit code in your select options, then set this to true. It will render something similar to this:
 
 ```
 <select>
@@ -62,7 +62,7 @@ The label is only included to show how you would use the for.
 
 ### Tests 
 
-No tests yet, sorry.
+Not yet available.
 
 ## emberx-select
 
@@ -75,3 +75,4 @@ Thanks to this [gist](https://gist.github.com/mshafrir/2646763#file-states_title
 
 ## Contribution
 Fork this repository, make a feature branch and send in a pull request.
+
