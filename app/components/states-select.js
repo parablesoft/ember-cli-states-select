@@ -1,0 +1,1 @@
+export { default } from 'ember-cli-states-select/components/states-select';

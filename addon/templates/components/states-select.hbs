@@ -1,0 +1,11 @@
+{{#x-select value=value class=class}}
+{{#each stateList as |state|}}
+	{{#x-option value=state.code}}
+		{{#if onlyDisplayStateCode}}
+				{{state.code}}
+			{{else}}
+				{{state.name}}
+		{{/if}}
+	{{/x-option}}
+	{{/each}}
+{{/x-select}}
