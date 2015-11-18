@@ -1,4 +1,3 @@
-
 # ember-cli-states-select
 
 An [ember-cli](http://www.ember-cli.com) addon for using 
