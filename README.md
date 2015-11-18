@@ -14,7 +14,7 @@ $ ember install ember-cli-states-select
 
 ### Ember Compatibility
 
-Version `>= 0.0.4` of this addon is compatible with Ember `>= 1.13.X` and
+Version `>= 0.0.7` of this addon is compatible with Ember `>= 1.13.X` and
 requires Ember CLI `>= 1.13.X`.
 
 
