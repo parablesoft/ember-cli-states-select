@@ -1,4 +1,5 @@
 {{#x-select value=value id=id class=class}}
+{{x-option}}
 {{#each stateList as |state|}}
 	{{#x-option value=state.code}}
 		{{#if onlyDisplayStateCode}}

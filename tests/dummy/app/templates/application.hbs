@@ -1,4 +1,9 @@
-<h2 id="title">Welcome to Ember</h2>
-<label for="selectBox">Test</label>
-{{states-select onlyDisplayStateCode=true value="FL" id="selectBox" class="form-control"}}
+<div>
+<h2>No value</h2>
+{{states-select onlyDisplayStateCode=true value="" id="selectBox1" class="form-control"}}
+</div>
+<div>
+	<h2>Value</h2>
+	{{states-select onlyDisplayStateCode=true value="FL" id="selectBox2" class="form-control"}}
+</div>
 {{outlet}}
