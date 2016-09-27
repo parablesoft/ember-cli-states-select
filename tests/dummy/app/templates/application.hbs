@@ -4,6 +4,9 @@
 </div>
 <div>
 	<h2>Value</h2>
-	{{states-select onlyDisplayStateCode=true value="FL" id="selectBox2" class="form-control"}}
+	{{states-select 
+		onlyDisplayStateCode=true 
+		blur=(action "blur")
+			value="FL" id="selectBox2" class="form-control"}}
 </div>
 {{outlet}}

@@ -5,6 +5,13 @@ export default Ember.Component.extend({
 	layout: layout,
 	tagName: "",
 	onlyDisplayStateCode: false,
+	actions:{
+	  onBlur(){
+			if(this.attrs.blur!=undefined){
+				this.attrs.blur();
+			}
+	  }
+	},
 	stateList: [
 		{
 			name: "Alabama",
