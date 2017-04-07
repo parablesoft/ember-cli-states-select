@@ -1,6 +1,9 @@
-/* jshint node: true */
+/* eslint-env node */
 'use strict';
 
 module.exports = {
-  name: 'ember-cli-states-select'
+  name: 'ember-cli-states-select',
+  isDevelopingAddon: function() {
+    return true;
+  },
 };
