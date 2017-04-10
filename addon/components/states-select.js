@@ -11,8 +11,8 @@ export default Component.extend({
       set(this,"value",selectedValue);
     },
     blur(){
-      if(this.attrs.blur!=undefined){
-	this.attrs.onBlur();
+      if(this.attrs.onBlur!=undefined){
+				this.attrs.onBlur();
       }
     }
   },
