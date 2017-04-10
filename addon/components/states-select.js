@@ -10,11 +10,11 @@ export default Component.extend({
     selected(selectedValue){
       set(this,"value",selectedValue);
     },
-    // onBlur(){
-    //   if(this.attrs.blur!=undefined){
-	// this.attrs.blur();
-    //   }
-    // }
+    blur(){
+      if(this.attrs.blur!=undefined){
+	this.attrs.onBlur();
+      }
+    }
   },
   stateList: [
     {
