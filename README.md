@@ -39,7 +39,14 @@ Pass in the field you want to bind the value of the component to, and you're off
 ### Other usage options
 ```
 <label for="someIdForThisComponent">State</label>
-{{states-select value=model.state class="form-control" id="someIdForThisComponent" onlyDisplayStateCode=true}}
+{{states-select 
+  value=model.state 
+  class="form-control" 
+  id="someIdForThisComponent" 
+  onlyDisplayStateCode=true
+  disabled=true
+  on-focus-out=(action "someAction")
+}}
 ```
 
 #### Options described
@@ -51,13 +58,10 @@ The label is only included to show how you would use the 'for'.
 
 **onlyDisplayStateCode** - Default is false. If you would only like to display the two digit code in your select options, then set this to true. It will render something similar to this:
 
-```
-<select>
-	<option value="AL">AL</option>
-	<option value="AK">AK</option>
-	....Truncated for the sake of brevity...
-</select>
-```
+**disabled** - Default is false. If you would like to put the control in a disabled state, simply set this to true.
+
+**on-focus-out**  - Pass in an action for when the control loses focus. 
+
 
 
 ### Tests 
