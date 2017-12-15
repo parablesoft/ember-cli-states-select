@@ -1,7 +1,16 @@
-
+<h2>Full State</h2>
 {{states-select value=state}}
-{{states-select onlyDisplayStateCode=true value=state2 }}
+<br/>
+{{state}}
 <hr>
-{{state}}<br/>
+<h2>Disabled</h2>
+{{states-select disabled=true value=state}}
+<hr>
+<h2>State Code</h2>
+{{states-select onlyDisplayStateCode=true value=state2 }}
+<br/>
 {{state2}}
+<hr/>
+<h2>Focus Out</h2>
+{{states-select onlyDisplayStateCode=true value=state3 on-focus-out=(action "focusOut") }}
 

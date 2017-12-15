@@ -5,5 +5,11 @@ const {Controller} = Ember;
 export default Controller.extend({
   
   state: "FL",
-  state2: "GA"
+  state2: "GA",
+  actions:{
+    focusOut(){
+      alert("Elvis has left the building");
+    }
+  }
+
 });
