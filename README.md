@@ -45,6 +45,7 @@ Pass in the field you want to bind the value of the component to, and you're off
   id="someIdForThisComponent" 
   onlyDisplayStateCode=true
   disabled=true
+  show-canada=false
   on-focus-out=(action "someAction")
 }}
 ```
@@ -61,6 +62,8 @@ The label is only included to show how you would use the 'for'.
 **disabled** - Default is false. If you would like to put the control in a disabled state, simply set this to true.
 
 **on-focus-out**  - Pass in an action for when the control loses focus. 
+
+**show-canada**  - Show Canadian Provinces
 
 
 
