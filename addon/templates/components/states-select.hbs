@@ -1,6 +1,19 @@
 {{#x-select value=value on-blur=(action "blur") class=class on-focus-out=on-focus-out disabled=disabled action="selected"  as |xs|}}
 {{xs.option}}
+{{#if  show-canada}}
+{{#xs.option}}---- USA ----{{/xs.option}}
+{{/if}}
 {{#each stateList as |state|}}
+  {{#xs.option value=state.code}}
+    {{#if onlyDisplayStateCode}}
+      {{state.code}}
+    {{else}}
+      {{state.name}}
+    {{/if}}
+  {{/xs.option}}
+{{/each}}
+{{#xs.option}}---- Canada ----{{/xs.option}}
+{{#each provinceList as |state|}}
   {{#xs.option value=state.code}}
     {{#if onlyDisplayStateCode}}
       {{state.code}}
