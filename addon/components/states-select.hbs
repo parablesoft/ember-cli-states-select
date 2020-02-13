@@ -1,0 +1,12 @@
+<PowerSelect 
+  @options={{this.options}} 
+	@selected={{this.value}}
+	@onChange={{fn this.handleChange}}
+	@onBlur={{@onBlur}}
+	as |option|>
+  {{#if this.onlyDisplayStateCode}}
+		{{option.code}}
+	{{else}}
+		{{option.name}}
+	{{/if}}
+</PowerSelect>

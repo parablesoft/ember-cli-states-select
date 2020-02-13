@@ -1,6 +1,0 @@
-{
-  "name": "ember-cli-states-select",
-  "dependencies": {
-    "selectize": "miguelcobain/selectize.js#master"
-  }
-}

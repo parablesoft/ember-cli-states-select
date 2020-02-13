@@ -1,19 +1,22 @@
-<h2>Full State</h2>
-{{states-select value=state}}
-<br/>
-{{state}}
+Box 1 - {{this.box1}}
+<StatesSelect 
+	@onUpdate={{fn this.updateValue 'box1'}}
+/>
+
+Box 2 - {{this.box2}}
+<StatesSelect 
+	@onUpdate={{fn this.updateValue 'box2'}}
+  @value={{this.box2}}
+  @show-canada={{true}}
+/>
+
+
 <hr>
-<h2>Disabled</h2>
-{{states-select da=true disabled=true value=state}}
-<hr>
-<h2>With Canadian Provinces</h2>
-{{states-select da=true show-canada=true value=state}}
-<hr/>
-<h2>State Code</h2>
-{{states-select onlyDisplayStateCode=true value=state2 }}
-<br/>
-{{state2}}
-<hr/>
-<h2>Focus Out</h2>
-{{states-select onlyDisplayStateCode=true value=state3 on-focus-out=(action "focusOut") }}
+Box 3 - {{this.box3}}
+<StatesSelect 
+  @value={{this.box3}}
+  @showCanada={{true}}
+	@onBlur={{fn this.handleBlur}}
+	@onUpdate={{fn this.updateValue 'box3'}}
+/>
 

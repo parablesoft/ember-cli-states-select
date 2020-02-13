@@ -40,7 +40,7 @@ export const  provinceList =  [
     name: "Saskatchewan",
     code: "SK"
   }
-];
+]
 
 export const stateList = [
     {
@@ -279,4 +279,4 @@ export const stateList = [
       name: "Wyoming",
       code: "WY"
     }
-];
+]

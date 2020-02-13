@@ -1,9 +1,5 @@
-/* eslint-env node */
 'use strict';
 
 module.exports = {
-  name: 'ember-cli-states-select',
-  isDevelopingAddon: function() {
-    return true;
-  },
+  name: require('./package').name
 };
