@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-states-select",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "description": "An ember-cli addon that consumes emberx-select with a list of US states.",
   "keywords": [
     "ember-addon",
